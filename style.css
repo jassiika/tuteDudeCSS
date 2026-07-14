@@ -1,41 +1,33 @@
 body{
-    background:orange;
+    margin: 0;
+    padding: 0;
+    max-height: 100vh;
 }
-.head{
-    color:blue
+section{
+    width:50%;
+    height: 80vh;
+    margin:10vh auto;
+    line-height: 0;
 }
-#bglime{
-    background:lime;
+
+.image{
+    width: auto;
+    height: auto;
 }
-h2 span{
-    color:red;
+img{
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
-p{
-    color:white;
-}
-#para{
-    color:green;
-}
-p span{
-    color:black;
-    font-size:30px;
-}
-ul{
-    color:white;
-}
-ul li:nth-child(1) a{
-    background:yellow;
-    color:lime;
-}
-ul li:nth-child(2) a{
-    background:purple;
-}
-ol{
-    color:black;
-}
-ol li:nth-child(2) {
-    color:blue;
-}
-ol li:nth-child(3) {
-    color:red;
+.clickMe{
+    width: 100%;
+    border: 1px solid black;
+    color: white;
+    height: 2rem;
+    font-size: 0.875rem;
+    background: linear-gradient(
+        135deg,
+        rgb(69, 17, 17), rgb(83, 30, 82), rgb(31, 26, 85), rgb(18, 59, 68)
+    );
 }
