@@ -1,89 +1,80 @@
-body{
-    height: 100vh;
-    width: 100vw;
-    font-family: 'Poppins', sans-serif;
+*{
     margin:0;
     padding:0;
+    box-sizing:border-box
 }
-.navbar {
-    height:70px;
+body{
+    overflow:hidden;
+}
+nav{
+    height:10vh;
     width:100vw;
-    padding-top:10px;
+    text-align:center;
+    padding:10px;
 }
-nav div {
+
+.logo,
+.nav-links,
+.username,.hero div{
     display:inline-block;
-    vertical-align: middle;
-    margin-right: 20px;
-}
-.nav-links{
-    margin-left: 430px;
-    word-spacing: 40px;
-}
-nav a{
-    font-size: 18px;
-    color: gray;
-    text-decoration: none;
+    vertical-align:middle;
+    line-height:normal;
 }
 .logo{
-    margin-left: 50px;
-    height: 60px;
-    border-radius: 50%;
-    width:60px;
-    object-fit: cover;
+    font-size: 4vh
+}
+.nav-links{
+    word-spacing:20px;
+    width:60vw;
+}
+nav a{
+    color:grey;
+    text-decoration:none;
 }
 .username{
-    float:right;
-    margin-right: 50px;
-    padding: 10px;
-    margin-top: 10px;
-    background-color: rgba(108, 207, 240, 0.418);
-    border-radius: 10px;
+    
+    padding:10px;
+    border-radius:15px;
+    color:rgb(38, 157, 168);
+    background-color:rgba(41, 146, 178, 0.354);
 }
-
-
-/* Content */
 .hero{
-    display:inline-block;
-    height: 80vh;
-    width: 100vw;
+    height:90vh;
+    width:100vw;
+    text-align:center;
 }
 .hero-content{
-    display:inline-block;
-    width:40%;
-    margin-left: 160px;
-    vertical-align: middle;
+    width:35vw;
+    text-align:left;
+    margin-left:5vw;
 }
 .hero-content h1{
-    font-size: 50px;
-    color: #444343;
-    word-spacing: 5px;
+    color:rgb(98, 97, 97);
+    font-size: 3rem;
+    margin-left: 2vh;
 }
-.hero-image{
-    display:inline-block;
-    width:35%;
-    height:auto;
-    vertical-align: middle;
-    margin-top: 50px;
-    margin-left: 50px;
-}
-.hero-content span{
-    color:rgb(43, 107, 210);
+.hero-content h1 span{
+    color:rgb(81, 184, 209);
 }
 .hero-content p{
-    font-size: 20px;
-    color: #9b9898;
+    font-size: 1.2rem;
+    color:rgb(160, 161, 161);
+    margin-left: 2vh;
+    word-spacing: 0.1rem;
 }
 .hero-content button{
-    padding: 20px 30px;
-    font-size: 15px;
-    background-color: rgb(86, 130, 201);
     color:white;
+    background-color:rgb(84, 176, 233);
     border:none;
-    border-radius: 10px;
-    margin-top: 20px;
+    border-radius:10px;
+    padding: 3vh 4vh;
+    margin-left:2vh;
+    margin-top: 2vh;
+}
+
+.hero-image{
+    width:35vw;
 }
 .hero-image img{
-    width:auto;
-    height:500px;
-    object-fit: cover;
+    height:80vh;
 }
