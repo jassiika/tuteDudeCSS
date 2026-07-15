@@ -1,28 +1,49 @@
-Image Card with Gradient Button
+# Laundry Services Hero Section
 
-This is a simple webpage created using HTML and CSS. It displays a landscape image inside a section along with a button placed below it. The button uses a dark gradient background to give the page a cleaner look.
+A simple laundry services landing page created using HTML and CSS.
 
-Features
-Responsive image layout
-Gradient styled button
-Simple and clean design
-Built using only HTML and CSS
-Technologies Used
-HTML5
-CSS3
-Project Structure
-index.html
-style.css
-image.jpg
-How to Run
-Download or clone the project.
-Open index.html in any web browser.
-The page will display the image and the button.
-What I Learned
+## Project Overview
 
-While building this project, I practiced:
+This project contains a navigation bar and a hero section for a laundry service website. The layout is built using inline-block display properties and viewport units (vh and vw) to create a responsive design.
 
-Working with margins and sizing using viewport units
-Styling images using object-fit
-Creating gradient backgrounds
-Basic page layout using CSS
+## Features
+
+- Navigation bar with:
+  - Home
+  - About Us
+  - Services
+  - Contact Us
+  - Username button
+
+- Hero section with:
+  - Heading and description
+  - Call-to-action button
+  - Laundry-themed illustration
+
+- Responsive sizing using viewport units
+- Inline-block based layout
+- Clean and simple user interface
+
+## Technologies Used
+
+- HTML5
+- CSS3
+
+## Files
+
+- `index.html` – Structure of the webpage
+- `style2.css` – Styling and layout of the webpage
+
+## Learning Objectives
+
+This project was created to practice:
+
+- HTML page structure
+- CSS styling
+- Inline-block display property
+- Viewport units (`vh` and `vw`)
+- Basic responsive design principles
+
+## Author
+
+Jasika
