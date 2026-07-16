@@ -1,80 +1,92 @@
 *{
-    margin:0;
+    margin :0;
     padding:0;
-    box-sizing:border-box
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-body{
-    overflow:hidden;
+section{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    width:100vw;
 }
-nav{
+.image{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    width:50vw;
+    background-color:rgb(61, 166, 218);
+}
+.image img{
+    height:80vh;
+}
+.form{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    width:50vw;
+    background-color:rgb(233, 248, 255)
+}
+.greetings{
+    margin-top:10vh;
     height:10vh;
-    width:100vw;
-    text-align:center;
-    padding:10px;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+    gap:0.3rem;
 }
-
-.logo,
-.nav-links,
-.username,.hero div{
-    display:inline-block;
-    vertical-align:middle;
-    line-height:normal;
-}
-.logo{
-    font-size: 4vh
-}
-.nav-links{
-    word-spacing:20px;
-    width:60vw;
-}
-nav a{
-    color:grey;
-    text-decoration:none;
-}
-.username{
+.login-details{
     
-    padding:10px;
-    border-radius:15px;
-    color:rgb(38, 157, 168);
-    background-color:rgba(41, 146, 178, 0.354);
-}
-.hero{
-    height:90vh;
-    width:100vw;
-    text-align:center;
-}
-.hero-content{
+    height:70vh;
     width:35vw;
-    text-align:left;
-    margin-left:5vw;
+    line-height:2rem;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    gap:1.5rem;
 }
-.hero-content h1{
-    color:rgb(98, 97, 97);
-    font-size: 3rem;
-    margin-left: 2vh;
+.email,.password,.login{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    color:rgb(74, 73, 73);
 }
-.hero-content h1 span{
-    color:rgb(81, 184, 209);
+.login-details input{
+    height:4rem;
+    text-indent:1rem;
+    border:none;
+    background-color:white;
+    border-radius:10px;
 }
-.hero-content p{
-    font-size: 1.2rem;
-    color:rgb(160, 161, 161);
-    margin-left: 2vh;
-    word-spacing: 0.1rem;
+.password a{
+    display:flex;
+    text-decoration:none;
+    color:rgb(42, 42, 42);
+    justify-content:flex-end;
 }
-.hero-content button{
-    color:white;
-    background-color:rgb(84, 176, 233);
+.login{
+    gap:1rem;
+}
+.login button{
+    height:3rem;
     border:none;
     border-radius:10px;
-    padding: 3vh 4vh;
-    margin-left:2vh;
-    margin-top: 2vh;
+    background-color:rgb(61, 166, 218);
+    font-size:1rem;
+    color:white;
 }
-
-.hero-image{
-    width:35vw;
+.login p{
+    height:3rem;
+    display:flex;
+    justify-content:center;
+    color:rgb(42, 42, 42);
+    gap:0.2rem;
+    
 }
-.hero-image img{
-    height:80vh;
+.login a{
+    text-decoration:none;
+    color:rgb(61, 166, 218);
 }
