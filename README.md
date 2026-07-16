@@ -1,49 +1,50 @@
-# Laundry Services Hero Section
-
-A simple laundry services landing page created using HTML and CSS.
+# Laundry Mart Login Page
 
 ## Project Overview
 
-This project contains a navigation bar and a hero section for a laundry service website. The layout is built using inline-block display properties and viewport units (vh and vw) to create a responsive design.
+This project is a simple and responsive login page created using HTML and CSS. The layout is divided into two sections: an illustration area and a login form area. The design focuses on a clean user interface with proper spacing, colors, and form elements.
 
 ## Features
 
-- Navigation bar with:
-  - Home
-  - About Us
-  - Services
-  - Contact Us
-  - Username button
-
-- Hero section with:
-  - Heading and description
-  - Call-to-action button
-  - Laundry-themed illustration
-
-- Responsive sizing using viewport units
-- Inline-block based layout
-- Clean and simple user interface
+* Two-column layout using Flexbox
+* Welcome message section
+* Email and Password input fields
+* Forgot Password link
+* Login button
+* Register link for new users
+* Clean and modern styling
 
 ## Technologies Used
 
-- HTML5
-- CSS3
+* HTML5
+* CSS3
 
-## Files
+## Project Structure
 
-- `index.html` – Structure of the webpage
-- `style2.css` – Styling and layout of the webpage
+```
+project-folder/
+│
+├── index.html
+├── style.css
+└── README.md
+```
 
-## Learning Objectives
+## How to Run
 
-This project was created to practice:
+1. Download or clone the project files.
+2. Make sure `index.html` and `style.css` are in the same folder.
+3. Open `index.html` in any web browser.
 
-- HTML page structure
-- CSS styling
-- Inline-block display property
-- Viewport units (`vh` and `vw`)
-- Basic responsive design principles
+## Learning Outcomes
+
+Through this project, I practiced:
+
+* HTML form creation
+* Flexbox layout design
+* CSS styling and positioning
+* Responsive sizing using viewport units
+* Working with links, buttons, and input fields
 
 ## Author
 
-Jasika
+Created as a frontend practice project using HTML and CSS.
