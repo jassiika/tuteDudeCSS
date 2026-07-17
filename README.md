@@ -1,16 +1,20 @@
-Login Page
+Laundry Service Landing Page
 
-I created this login page using HTML and CSS.
+I created this laundry service landing page using HTML and CSS.
 
 The page contains:
-- Email field
-- Password field
-- Login button
+- Navigation bar
+- Hero section
+- Laundry service information
+- Service booking button
+- Laundry illustration/image
 
 While making this project I learned how to:
-- Use Flexbox for alignment
-- Style forms using CSS
-- Create a two-column layout
+- Use Flexbox for layout design
+- Align content and images properly
+- Style buttons and text using CSS
+- Create responsive designs using media queries
+- Improve webpage appearance with colors and spacing
 
 Files:
 - index.html
