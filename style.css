@@ -1,106 +1,115 @@
-/* universal styling */
 *{
-    margin :0;
+    margin:0;
     padding:0;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Poppins, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
-/* dividing page in 2 sections */
-section{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
+
+/* navigation */
+nav{
+    position:sticky;
+    height:10vh;
     width:100vw;
-}
-/* image section */
-.image{
     display:flex;
     justify-content:center;
     align-items:center;
-    height:100vh;
-    width:50vw;
-    background-color:rgb(61, 166, 218);
+    gap:20vw;
+}
+.logo{
+    color:black;
+    font-size:1.5rem;
+    font-weight:200;
+}
+.username{
+    background-color:rgb(191, 233, 242);
+    border-radius:0.6rem;
+    height:8vh;
+    width:9vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:rgb(55, 204, 238);
+}
+.list {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    gap:3vw;
+}
+.list a{
+    text-decoration:none;
+    color:rgb(122, 121, 121);
+    font-size:1.1rem;
+}
+
+/* main page content */
+.container{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-content:center;
+    gap:5vw;
+}
+
+/* image */
+.image{
+    height:90vh;
+    width:30vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 .image img{
     height:80vh;
 }
-/* login section */
-.form{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-    width:50vw;
-    background-color:rgb(233, 248, 255)
-}
-.greetings{
-    margin-top:10vh;
-    height:10vh;
+
+/* content  */
+.content{
+    height:90vh;
+    width:30vw;
     display:flex;
     justify-content:center;
     flex-direction:column;
-    align-items:center;
-    gap:0.3rem;
+    gap: 1.5rem;
 }
-.login-details{
-    
-    height:70vh;
-    width:35vw;
-    line-height:2rem;
-    display:flex;
-    justify-content:center;
-    flex-direction:column;
-    gap:1.5rem;
+.content h1{
+    color:rgb(57, 57, 57);
+    font-size:2.8rem;
 }
-.email,.password,.login{
-    display:flex;
-    justify-content:center;
-    flex-direction:column;
-    color:rgb(74, 73, 73);
+.content p{
+    font-size:1.1rem;
+    color:rgb(166, 166, 166);
 }
-.login-details input{
-    height:4rem;
-    text-indent:1rem;
+.content h1 span{
+    color:rgb(47, 180, 210);
+}
+.content button{
+    height:8vh;
+    width:15vw;
     border:none;
-    background-color:white;
-    border-radius:10px;
-}
-.password a{
-    display:flex;
-    text-decoration:none;
-    color:rgb(42, 42, 42);
-    justify-content:flex-end;
-}
-.login{
-    gap:1rem;
-}
-.login button{
-    height:3rem;
-    border:none;
-    border-radius:10px;
-    background-color:rgb(61, 166, 218);
-    font-size:1rem;
+    border-radius:0.6rem;
+    background-color:rgb(47, 180, 210);
     color:white;
 }
-.login p{
-    height:3rem;
-    display:flex;
-    justify-content:center;
-    color:rgb(42, 42, 42);
-    gap:0.2rem;
-    
-}
-.login a{
-    text-decoration:none;
-    color:rgb(61, 166, 218);
-}
-/* hover feature */
-.login button:hover{
-    transform:scale(1.1);
-}
+
 /* responsiveness */
-@media(max-width:768px){
-    .section{
-        width:90vw;
+@media (max-width:1024px){
+    .content h1{
+        font-size:2rem;
     }
+    .content p{
+        font-size:0.8rem;
+    }
+    .content button{
+        font-size:0.6rem;
+    }
+    .image img{
+        height:60vh;
+    }
+}
+@media (max-width:768px){
+    .list{
+        display:none;
+    }
+
 }
