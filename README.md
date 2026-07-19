@@ -1,23 +1,23 @@
-Laundry Service Landing Page
+Responsive Laundry Service Landing Page
 
-I created this laundry service landing page using HTML and CSS.
+This project is a responsive landing page created using HTML and CSS.
 
-The page contains:
-- Navigation bar
-- Hero section
-- Laundry service information
-- Service booking button
-- Laundry illustration/image
+Features
+- Fixed navigation bar
+- Responsive design for desktop, tablet, and mobile devices
+- Hamburger menu for mobile view
+- Laundry service hero section with image and call-to-action button
+- CSS-only mobile menu using the `:focus-within` pseudo-class
 
-While making this project I learned how to:
-- Use Flexbox for layout design
-- Align content and images properly
-- Style buttons and text using CSS
-- Create responsive designs using media queries
-- Improve webpage appearance with colors and spacing
+Technologies Used
+- HTML5
+- CSS3
+- Flexbox
+- Media Queries
 
-Files:
+Files
 - index.html
 - style.css
 
-To run the project, open index.html in a browser.
+How to Run
+Open `index.html` in any web browser to view the project.
