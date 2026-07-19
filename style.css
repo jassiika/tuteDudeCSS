@@ -3,13 +3,21 @@
     padding:0;
     box-sizing:border-box;
     font-family:Poppins,sans-serif;
+    --primary--background-color:white;
 }
 
 /* navigation */
 nav{
-    position:sticky;
     height:10vh;
+    position:fixed;
     width:100vw;
+    top:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:var(--primary--background-color);
+}
+.navbar{
     display:flex;
     justify-content:center;
     align-items:center;
@@ -30,6 +38,22 @@ nav{
     align-items:center;
     color:rgb(55, 204, 238);
 }
+.hamburger{
+    width:10vw;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    gap:1vh;
+}
+.hamburger span{
+    display:flex;
+    width:2rem;
+    height:0.6vh;
+    border-radius:10rem;
+    border:none;
+    background:black;
+}
 .list {
     display:flex;
     flex-direction:row;
@@ -45,10 +69,11 @@ nav{
 
 /* main page content */
 .container{
+    margin-top:10vh;
     height:90vh;
     display:flex;
     justify-content:center;
-    align-content:center;
+    align-items:center;
     gap:5vw;
 }
 
@@ -124,11 +149,11 @@ nav{
 }
 /* responsiveness for mobile view*/
 @media (max-width:768px){
-    nav{
+    .navbar{
         text-align:center;
         width:100vw;
         justify-content:center;
-        gap:40vw;
+        gap:55vw;
     }
 
     .list{
@@ -141,12 +166,37 @@ nav{
 
     .username{
         font-size:0.8rem;
-        width:15vw;
+        width:6rem;
         padding:8px 12px;
     }
+    /* hamburger button*/
+    .hamburger{
+        display:flex;
+        cursor:pointer;
+    }
+    nav:focus-within .list{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        gap:1rem;
 
+        position:fixed;
+        top:0;
+        right:0;
+
+        width:40vw;
+        height:100vh;
+
+        background:black;
+        z-index:1000;
+    }
+
+    .list a{
+        color:white;
+    }
     .container{
-        margin-top:30vh;
+        margin-top:40vh;
         flex-direction:column;
         gap:10vh;
         align-items:center;
