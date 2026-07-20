@@ -1,14 +1,15 @@
-Hover effect on the Book a service now button
+Animation on image 
 
 This project is a responsive landing page created using HTML and CSS.
 
 Features
-- Added the tilted and the increase in size effect on hovering on the button
+- Added a keyframe for orbital animation to seek attention on the image.
 
 Technologies Used
 - HTML5
 - CSS3
 - transform and transition
+- animation
 
 Files
 - index.html
