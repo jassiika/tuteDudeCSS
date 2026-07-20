@@ -1,4 +1,4 @@
-Responsive Laundry Service Landing Page
+Hover effect on the Book a service now button
 
 This project is a responsive landing page created using HTML and CSS.
 
