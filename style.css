@@ -116,6 +116,12 @@ nav{
     border-radius:0.6rem;
     background-color:rgb(47, 180, 210);
     color:white;
+    transition:transform 0.8s ease;
+}
+/* transition - transform for button*/
+.content button:hover{
+    transform:scale(1.4) rotate(-5deg);
+
 }
 
 /* responsiveness for tablet view*/
