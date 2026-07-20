@@ -87,6 +87,34 @@ nav{
 }
 .image img{
     height:80vh;
+    width:auto;
+}
+/* hover effect */
+.image img:hover{
+    animation:rolarcoaster 3s ease-in-out 5;
+}
+
+/* animation for image */
+@keyframes rolarcoaster{
+     0%,100%{
+        transform: translate(0,0) ;
+    }
+
+    20%{
+        transform: translate(20px,-15px) scaleX(1.15) scaleY(0.9);
+    }
+
+    40%{
+        transform: translate(-15px,10px) ;
+    }
+
+    60%{
+        transform: translate(25px,15px) scaleX(1.1) scaleY(0.95);
+    }
+
+    80%{
+        transform: translate(-10px,-10px) ;
+    }
 }
 
 /* content  */
@@ -118,7 +146,6 @@ nav{
     color:white;
     transition:transform 0.8s ease;
 }
-/* transition - transform for button*/
 .content button:hover{
     transform:scale(1.4) rotate(-5deg);
 
@@ -153,7 +180,7 @@ nav{
         width:10vw;
     }
 }
-/* responsiveness for mobile view*/
+/* responsiveness for mobile view */
 @media (max-width:768px){
     .navbar{
         text-align:center;
@@ -234,4 +261,4 @@ nav{
         height:auto;
         width:80vw;
     }
-}
+} 
