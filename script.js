@@ -1,5 +1,18 @@
-let p=10000,n=1,r=0.1,t=2;
-const Amount= p*((1+r/n)**(n*t));
-const compoundIntreset=Amount-p;
-console.log("Amount:",Amount);
-console.log("compoundIntreset:" ,compoundIntreset);
+const number1=10;
+if(number1%2==0){
+    console.log("The number",number1,"is even.")
+}else{
+    console.log("The number",number1,"is odd.")
+}
+var number2=39;
+if(number2%2==0){
+    console.log("The number",number2,"is even.")
+}else{
+    console.log("The number",number2,"is odd.")
+}
+let number3=43;
+if(number3%2==0){
+    console.log("The number",number3,"is even.")
+}else{
+    console.log("The number",number3,"is odd.")
+}
