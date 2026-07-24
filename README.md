@@ -1,29 +1,28 @@
-JavaScript Number Programs
+JavaScript Array Operations
 
-Features
+Description
 
-1. Calculate the sum of the first `n` natural numbers.
-2. Print the multiplication table of a given number.
-3. Check whether a number is prime or not.
-4. Find the sum of digits of a number.
-5. Print all factors of a number.
-6. Check whether a number is an Armstrong number.
+This JavaScript program performs three basic operations on an array:
 
-Concepts Used
+1. Finds the maximum element in the array.
+2. Calculates the sum of all elements in the array.
+3. Counts the number of odd elements in the array.
 
-* Variables and constants
-* Loops (`for`, `while`)
-* Conditional statements (`if`, `else`)
-* Arithmetic operators
-* Basic number manipulation
-
-
- How to Run
-
-1. Save the code in a file named `script.js`.
-2. Open a terminal in the project folder.
-3. Run the following command:
+Concepts Used:
+    Arrays
+    Function Declaration
+    Arrow Functions
+    Anonymous Functions
+    Loops (for...of)
+    Conditional Statements (if)
+    Arithmetic Operators
 
 Files:
-  - index.html
-  - script.js
+ -index.html
+ - script.js
+
+How to Run
+
+1. Save the file as `script.js`.
+2. Open the terminal in the project folder.
+3. Run the following command:
