@@ -1,28 +1,29 @@
-JavaScript Array Operations
+Maps and filters in JavaScript
 
 Description
 
 This JavaScript program performs three basic operations on an array:
 
-1. Finds the maximum element in the array.
-2. Calculates the sum of all elements in the array.
-3. Counts the number of odd elements in the array.
+- displaying content using javaScript using basic DOM.
+- filtering out the names starting with the text entered in search bar.
 
 Concepts Used:
-    Arrays
-    Function Declaration
-    Arrow Functions
-    Anonymous Functions
+    Functions 
+    maps
+    filters
     Loops (for...of)
-    Conditional Statements (if)
-    Arithmetic Operators
+    for Each function
+    event Listeners
+
 
 Files:
- -index.html
+ - index.html
+ - style.css
  - script.js
 
 How to Run
 
-1. Save the file as `script.js`.
-2. Open the terminal in the project folder.
-3. Run the following command:
+1. Use the Live Server extension in VS Code:
+    - Right-click on index.html
+    - Select Open with Live Server
+2. The application will launch in your default browser.
