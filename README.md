@@ -1,28 +1,23 @@
-Maps and filters in JavaScript
+JavaScript Promises and error handling
 
 Description
 
-This JavaScript program performs three basic operations on an array:
-
-- displaying content using javaScript using basic DOM.
-- filtering out the names starting with the text entered in search bar.
+This JavaScript program performs division on 2 variables :
+    -returns a promise with 
+    - resolve and 
+    -reject on division with 0.
 
 Concepts Used:
-    Functions 
-    maps
-    filters
-    Loops (for...of)
-    for Each function
-    event Listeners
-
+    promises 
+    reject and resolve stages of promise
+    .then and .catch
+    error handling 
 
 Files:
  - index.html
- - style.css
  - script.js
 
 How to Run
-
 1. Use the Live Server extension in VS Code:
     - Right-click on index.html
     - Select Open with Live Server
