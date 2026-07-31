@@ -1,4 +1,4 @@
-function division (a,b){
+const division =(a,b)=>{
   return new Promise ((resolve,reject) => {
     console.log(`Dividing ${a} by ${b}...`);
       if(b==0){
