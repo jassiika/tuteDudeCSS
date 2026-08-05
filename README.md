@@ -1,21 +1,16 @@
-JavaScript Promises and error handling
+JavaScript DOM Project
 
 Description
 
-This JavaScript program performs division on 2 variables :
-    -returns a promise with 
-    - resolve and 
-    -reject on division with 0.
+Created a web page to add the services like washing cleaning in cart and showing the total amount and finally submitting the contact details.
 
 Concepts Used:
-    promises 
-    reject and resolve stages of promise
-    .then and .catch
-    error handling 
+    DOM
 
 Files:
  - index.html
  - script.js
+ - style.css
 
 How to Run
 1. Use the Live Server extension in VS Code:
