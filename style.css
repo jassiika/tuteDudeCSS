@@ -1,0 +1,360 @@
+:root{
+    --p-color:white;
+    --s-color:rgb(237, 237, 237);
+}
+body{
+    padding:0;
+    margin:0;
+    background-color:var(--s-color);
+    box-sizing:border-box;
+    font-family: Poppins, sans-serif;
+}
+/* navigation bar */
+nav{
+    height:8vh;
+    width:80vw;
+    padding:0 10vw ;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color:var(--p-color);
+}
+
+/* logo */
+.logo{
+    font-size:1.2rem;
+}
+
+/* menu list */
+.menu{
+    width:25vw;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.menu a{
+    text-decoration:none;
+    color:grey;
+}
+
+/* username styling */
+.user{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:none;
+}
+.username{
+    height:5vh;
+    width:6vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:rgb(42, 180, 211);
+    font-size:0.9rem;
+    border-radius:20px 0 0 20px ;
+    background-color:rgba(112, 198, 215, 0.217);
+}
+.user svg{
+    fill:rgb(186, 12, 12);
+}
+.logout{
+    height:5vh;
+    width:2.5vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:0 20px 20px 0 ;
+    background-color:rgba(244, 15, 15, 0.16);
+}
+
+/* content */
+.container{
+    height: 90vh;
+    width:82vw;
+    margin:1vh 9vw;
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    gap:2vw;
+    align-items:center;
+}
+.accounts, .info, .services{
+    background-color:var(--p-color);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+}
+
+/* billing.. accounts total */
+.accounts h4{
+    margin:0;
+    padding:0.7em 0;
+    height:6vh;
+    font-size:1.2rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.accounts .noItems{
+    height:36vh;    
+    width:40vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+.noItems a{
+    font-size:2.5rem;
+    fill:rgb(186, 12, 12);
+}
+.total{
+    width:40vw;
+    height:8vh;
+    position:sticky;
+    display:flex;
+    justify-content:center;
+    gap: 20rem;
+    padding:0.5em 0;
+    align-items:center;
+    font-weight:600;
+    bottom:0;
+    border-top:1px solid rgb(216, 214, 214);
+}
+.billing{
+    width:40vw;
+    height:86vh;
+    display:flex;
+    flex-direction:column;
+    gap: 0.8em;
+    justify-content:center;
+    align-items:center;
+}
+.accounts{
+    width:40vw;
+    height:46vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border-radius:10px;
+}
+.accounts table{
+    width:40vw;
+    font-size:0.8rem;
+    text-align:left;
+    border-collapse: separate;
+    border-spacing: 0;
+    text-indent: 1em;
+}
+.accounts tbody{
+    display:block;
+    max-height:30vh;
+    overflow-y:auto;
+}
+.accounts tbody td{
+    background:var(--p-color);
+    height:3vh;
+}
+.accounts thead,.accounts tbody tr{
+    display:table;
+    width:100%;
+    table-layout:fixed; 
+}
+.accounts th, .accounts td{
+    padding:0.5em 0;
+}
+th:first-child,td:first-child{
+    width:10%;
+}
+.accounts thead{
+    background-color:var(--s-color);
+}
+th:nth-child(2),td:nth-child(2){
+    width:70%;
+}
+
+/* book now */
+.info{
+    width:40vw;
+    height:38vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border-radius:10px;
+}
+.info h4{
+    margin:0;
+    width:38vw;
+    align-items:left;
+    padding:0.5em 0;
+    height:3vh;
+    font-size:1.1rem;
+    
+}
+.info form{
+    margin:0;
+    padding:0;
+    width:38vw;
+    height:30vh;
+    display:grid;
+    font-size:0.8rem;
+    grid-template-columns:1fr 1fr;
+    gap:0.7em;
+}
+.name, .info button,form p{
+    grid-column:1 /-1;
+}
+.info input{
+    width:100%;
+    height:6vh;
+    box-sizing:border-box;
+    border-radius:10px;
+    border:1px solid rgb(216, 214, 214);
+    color:black;
+    text-indent:0.5em;
+    font-size:1rem;
+}
+.info button{
+    width:38vw;
+    height:6vh;
+    border:none;
+    border-radius:10px;
+    text-align:center;
+    background-color:rgba(19, 194, 229, 0.297);
+    color:white;
+    font-size:1rem;
+}
+.info form p{
+    color:rgb(59, 188, 59);
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+
+/* services section */
+.services{
+    width:40vw;
+    height:86vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border-radius:10px;
+}
+
+/* heading section */
+.serviceHeading{
+    width:38vw;
+    height:15vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    border-bottom:1px solid rgb(216, 214, 214);
+}
+.serviceHeading h3{
+    width:38vw;
+    margin:0;
+    font-size:1.4rem;
+    font-weight:700;
+    line-height:0.7;
+}
+.serviceHeading p{
+    width:38vw;
+    margin:0;
+    color:rgb(83, 83, 83);
+    padding:0.5em 0;
+    font-size:0.9rem;
+}
+
+/* image service section */
+
+.service img{
+    width:36vw;
+    height:36vh;
+    object-fit:cover;
+}
+.service{
+    margin:0;
+    padding:0;
+    width:38vw;
+    height:62vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.serviceName{
+    width:36vw;
+    height:5vh;
+    padding-top:0.5em;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:1.3rem;
+    font-weight:600;
+}
+.service span:nth-child(2){
+    color:rgb(74, 69, 178);
+    letter-spacing:0.1em;
+}
+.buttons{
+    width:36vw;
+    margin:0;
+    padding:0;
+    height:10vh;
+    display:flex;
+    justify-content:center;
+    gap:0.5em;
+    align-items:center;
+}
+.buttons button{
+    height:6vh;
+    border:none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:row;
+    border-radius:10px;
+    font-size:0.8rem;
+}
+.add svg, .skip svg{
+    padding-left:0.2em;
+}
+.add svg{
+    fill:rgb(38, 214, 38);
+}
+.add{
+    width:65%;
+    background-color:rgba(88, 212, 88, 0.301);
+    color:rgb(38, 214, 38);
+}
+
+.skip svg{
+    fill:rgb(214, 38, 38);
+}
+.skip{
+    width:35%;
+    background-color:rgba(214, 38, 38, 0.301);
+    color:rgb(214, 38, 38);
+}
+
+/* notify section */
+.notify{
+    width:38vw;
+    height:12vh;
+    border-top:1px solid rgb(216, 214, 214);
+}
+.notify p{
+    margin:0;
+    text-align:left;
+    padding-top:2.5em;
+    font-size:0.9rem;
+    color:rgb(4, 78, 189)
+}
+.notify span{
+    font-size:1rem;
+    color:rgb(4, 78, 189);
+    padding-right:0.1em;
+}
