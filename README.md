@@ -1,21 +1,35 @@
-JavaScript mini project
+Laundry Website Server using Node.js
 
-description:
-  made a project to add services in the cart and sent the email and book it using html css and javascript.
+This project is a basic Node.js web server built using the HTTP module. It serves different HTML pages based on the route requested by the user.
 
-features used:
-  - css variables for colors.
-  - event listeners
-  - list
-  - DOM
-  - for each
+Features
+    Created using Node.js HTTP module
+    Handles multiple routes
+    Serves different HTML pages
+    Custom 404 page for invalid routes
+    Includes HTML, CSS, JavaScript and image files
+    Runs on a local server
+    
+Available Routes
+    /home – Home page (Laundry Website)
+    /about – About Us page
+    /contact – Contact page
+    Any other route – Custom 404 page
+    
+How to Run
+    Open the project folder in VS Code.
+    Open the terminal.
+    
+Run:
+    node server.js
 
-files:
-  -index.html
-  -script.js
-  -style.css
-
-how to run:
-  -Install Live Server.
-  -Right-click index.html.
-  -Select "Open with Live Server".
+Open the browser and visit:
+    http://localhost:3000/home
+    http://localhost:3000/about
+    http://localhost:3000/contact
+    
+Technologies Used
+    HTML
+    CSS
+    JavaScript
+    Node.js (HTTP Module)
