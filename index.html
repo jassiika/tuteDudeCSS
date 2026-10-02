@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thala 7 – Sneaker Store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ HEADER (shared by all pages, built with Flexbox) ============ -->
+<header class="header">
+  <nav class="navbar container">
+    <a class="logo" href="#home">Thala <span>7.</span></a>
+    <ul class="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#product">About</a></li>
+      <li><a href="#product">Brands</a></li>
+      <li><a href="#product">More</a></li>
+      <li><a href="#cart">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <label class="search"><span>🔍</span><input type="text" placeholder="Search" aria-label="Search"></label>
+      <a class="cart-icon" href="#cart" aria-label="Cart">🛍 <span id="cartCount">0</span></a>
+      <div class="avatar" title="Profile">MS</div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<!-- ============ 1. LANDING PAGE ============ -->
+<section id="home" class="page">
+  <div class="hero">
+    <div class="hero-inner container">
+      <div class="hero-left">
+        <p class="brand7">SEVEN BY M.S.DHONI</p>
+        <h1>7!! Thala For a <em>Reason!</em></h1>
+        <p class="hero-text">Lightweight, cushioned running shoes built for the long innings. Pick up your pair and run your own victory lap.</p>
+        <a class="btn btn-dark" href="#product">Shop Now</a>
+      </div>
+      <div class="hero-right">
+        <img src="shoes.png" alt="Teal running sneaker" class="hero-img">
+      </div>
+    </div>
+  </div>
+
+  <!-- Service overview: outside the main hero div, full width -->
+  <div class="services">
+    <div class="services-inner container">
+      <div class="service"><span class="s-icon">❤</span><div><strong>2k+</strong><small>Reviews</small></div></div>
+      <div class="service"><span class="s-icon">👥</span><div><strong>30k+</strong><small>Customers</small></div></div>
+      <div class="service"><span class="s-icon">🏅</span><div><strong>High</strong><small>Quality</small></div></div>
+      <div class="service"><span class="s-icon">★</span><div><strong>4.5/5</strong><small>Rating</small></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2. PRODUCT DISPLAY PAGE ============ -->
+<section id="product" class="page">
+  <div class="container">
+    <p class="crumbs">Home › THALA FOR A REASON › Seven By M.S.Dhoni Women's Hogun Multi-Color Running Shoes</p>
+
+    <!-- Main display: image left, details right -->
+    <div class="product-main">
+      <div class="product-image"><img id="mainImg" src="shoes.png" alt="Seven By M.S.Dhoni Hogun running shoe"></div>
+      <div class="product-info">
+        <h2>Seven By M.S.Dhoni Women's Hogun Multi-Color Running Shoes</h2>
+        <p class="desc">For exceptional fit, feel and smooth transitions get going with these dual-mid sole technology shoes constructed with molded EVA sock liner, gel at heel area, rubber outsole, fused upper and breathable mesh.</p>
+        <div class="price-row">
+          <div class="price">₹1,334</div>
+          <div class="sale"><b>Save 12%</b><small>Inclusive of all Taxes</small></div>
+        </div>
+        <div class="buy-row">
+          <select id="qtySelect" aria-label="Quantity">
+            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+          </select>
+          <button class="btn btn-orange" id="addBtn">🛒 ADD TO CART</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom gallery: horizontal scrolling flex container -->
+    <div class="gallery" aria-label="Product images">
+      <button class="thumb active" data-style="none"><img src="shoes.png" alt="Side view"></button>
+      <button class="thumb" data-style="scaleX(-1)"><img src="shoes.png" alt="Mirrored view" style="transform:scaleX(-1)"></button>
+      <button class="thumb" data-style="rotate(-15deg)"><img src="shoes.png" alt="Tilted view" style="transform:rotate(-15deg)"></button>
+      <button class="thumb" data-style="rotate(15deg) scaleX(-1)"><img src="shoes.png" alt="Tilted mirrored view" style="transform:rotate(15deg) scaleX(-1)"></button>
+      <button class="thumb" data-style="scale(1.25)"><img src="shoes.png" alt="Close view" style="transform:scale(1.25)"></button>
+      <button class="thumb" data-style="rotate(-30deg)"><img src="shoes.png" alt="Angled view" style="transform:rotate(-30deg)"></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. SHOPPING CART PAGE ============ -->
+<section id="cart" class="page">
+  <div class="container">
+    <h2 class="page-title">Shopping Cart</h2>
+    <div class="two-col">
+
+      <!-- Left container -->
+      <div class="left">
+        <table class="cart-table">
+          <thead><tr><th>Product</th><th>Quantity</th><th>Price</th><th></th></tr></thead>
+          <tbody id="cartBody"></tbody>
+        </table>
+        <p id="emptyMsg" class="empty">Your cart is empty. <a href="#product">Pick a pair</a> to get started.</p>
+        <!-- Bottom container -->
+        <a class="continue" href="#product">‹ Continue Shopping</a>
+      </div>
+
+      <!-- Right container -->
+      <aside class="right">
+        <div class="card">
+          <label class="small-label" for="cartCoupon">Enter Coupon Code</label>
+          <div class="coupon">
+            <input id="cartCoupon" type="text" placeholder="Try THALA7">
+            <button class="btn-blue" data-apply>Apply Coupon</button>
+          </div>
+          <p class="coupon-msg"></p>
+          <div class="row"><span>Sub Total</span><span data-sub>₹0</span></div>
+          <div class="row"><span>Taxes (18% GST)</span><span data-tax>₹0</span></div>
+          <div class="row"><span>Discount</span><span data-disc>₹0</span></div>
+          <div class="row total"><span>Total</span><span data-total>₹0</span></div>
+        </div>
+        <a href="#checkout" class="btn btn-orange pay-btn" data-pay>Pay Now ₹0</a>
+        <div class="razorpay"><span>🛡 Secure</span><b>Razorpay</b><span>✔ Trusted</span></div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. PAYMENT PAGE ============ -->
+<section id="checkout" class="page">
+  <div class="checkout">
+
+    <!-- Left container -->
+    <div class="co-left">
+      <p class="small-label">Checkout</p>
+      <h3>Contact Details</h3>
+      <div class="field">
+        <label for="email">Email ID</label>
+        <input id="email" type="email" placeholder="you@example.com">
+      </div>
+
+      <h3>Payment</h3>
+      <div class="card">
+        <div class="pay-tabs">
+          <button class="tab active" data-tab="card">💳 Card</button>
+          <button class="tab" data-tab="crypto">₿ Crypto</button>
+          <button class="tab" data-tab="bank">🏛 Bank</button>
+        </div>
+        <div id="tab-card" class="tab-body">
+          <div class="field"><label for="cn">Card Number</label><input id="cn" inputmode="numeric" maxlength="19" placeholder="1234 1234 1234 1234"></div>
+          <div class="grid2">
+            <div class="field"><label for="ex">Expiry</label><input id="ex" maxlength="7" placeholder="MM / YY"></div>
+            <div class="field"><label for="cv">CVV</label><input id="cv" maxlength="4" placeholder="123"></div>
+          </div>
+          <div class="grid2">
+            <div class="field"><label for="ct">Country</label>
+              <select id="ct"><option>India</option><option>United States</option><option>United Kingdom</option></select></div>
+            <div class="field"><label for="zp">ZIP</label><input id="zp" placeholder="560001"></div>
+          </div>
+        </div>
+        <div id="tab-crypto" class="tab-body hidden"><p class="note">You will get a wallet address and QR code after you tap Pay Now.</p></div>
+        <div id="tab-bank" class="tab-body hidden"><p class="note">You will be redirected to your bank to approve this payment.</p></div>
+      </div>
+    </div>
+
+    <!-- Right container -->
+    <div class="co-right">
+      <h3 class="center">Order Summary</h3>
+      <div class="card">
+        <label class="small-label" for="coCoupon">Enter Coupon Code</label>
+        <div class="coupon">
+          <input id="coCoupon" type="text" placeholder="Try THALA7">
+          <button class="btn-blue" data-apply>Apply Coupon</button>
+        </div>
+        <p class="coupon-msg"></p>
+        <div class="row"><span>Sub Total</span><span data-sub>₹0</span></div>
+        <div class="row"><span>Taxes (18% GST)</span><span data-tax>₹0</span></div>
+        <div class="row"><span>Discount</span><span data-disc>₹0</span></div>
+        <div class="row total"><span>Total</span><span data-total>₹0</span></div>
+      </div>
+      <button class="btn btn-orange pay-btn" id="payNow" data-pay>Pay Now ₹0</button>
+      <div class="razorpay"><span>🛡 Secure</span><b>Razorpay</b><span>✔ Trusted</span></div>
+    </div>
+  </div>
+
+  <div id="success" class="success hidden">
+    <div class="tick">✓</div>
+    <h2>Payment successful</h2>
+    <p>Thanks for your order. This is a demo, so no real payment was made.</p>
+    <a class="btn btn-dark" href="#home">Back to home</a>
+  </div>
+</section>
+
+</main>
+<script src="script.js"></script>
+</body>
+</html>
