@@ -1,30 +1,13 @@
-Thala 7 – Sneaker Store
+Project – Landing Page
 
-A CSS mini project: a four-page sneaker store built with plain HTML, CSS and a little JavaScript. No frameworks or build tools.
+A responsive landing page built with plain HTML and Tailwind CSS (via CDN). No custom CSS, no build step.
 
-
-Project structure
-
-```
-thala7/
-├── index.html   # markup for all four pages
-├── style.css    # all styling (Flexbox + Grid, responsive)
-├── script.js    # page switching, cart, coupon, tabs, payment demo
-└── shoes.png    # product image
-```
-
- How to run
-
-1. Keep all four files in the same folder (`shoes.png` must sit next to `index.html`).
-2. Open `index.html` in any modern browser.
-
-
-Task checklist
-
-- [x] Landing page: Flexbox navbar, two-div hero, full-width service overview
-- [x] Product page: main display and scrolling bottom gallery
-- [x] Cart page: left, right and bottom containers
-- [x] Payment page: left and right containers with order summary
-- [x] Same header on every page
-- [x] Razorpay badges on the cart and payment pages
-- [x] Responsive down to mobile widths
+Features
+    Sticky navbar with logo, links and "Get AI free" button
+    Gradient hero with two CTA buttons
+    Dashboard preview with floating Tasks, Project Status and Team Activity cards
+    Fixed chat widget (bottom-right)
+How to Run
+    Keep index.html in a folder.
+    Double-click it to open in your browser (internet needed for the Tailwind CDN).
+    Optional: run npx serve in that folder and open the URL shown.
